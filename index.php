@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.php">Contato</a>
+                        <a class="nav-link" href="paginas/contato.php">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -107,7 +107,7 @@
             foreach ($cards as $card) {
                 echo '
           <div class="col">
-            <div class="card" style="width: 18rem;">
+            <div class="card h-100">
               <img src="' . $card['image'] . '" class="card-img-top" alt="' . $card['title'] . '">
               <div class="card-body">
                 <h5 class="card-title">' . $card['title'] . '</h5>

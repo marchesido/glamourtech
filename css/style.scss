@@ -42,4 +42,17 @@ $primary: #ffd7d5;
     margin-bottom: 5px;
     box-shadow: 0 0 10px #CCC;
     text-align: center;
+    height: 100%;
+
+    .card-img-top {
+        height: 200px; // ajuste como preferir (ex: 180px, 250px etc.)
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
