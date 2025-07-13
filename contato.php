@@ -98,6 +98,36 @@
         crossorigin="anonymous"></script>
 
     <script>
+        function cpfValidator(cpf) {
+            if (!cpf) return false;
+
+            const cpfNumerico = cpf.replace(/\D/g, '');
+
+            if (cpfNumerico.length !== 11 || /^(\d)\1{10}$/.test(cpfNumerico)) {
+                return false;
+            }
+
+            let soma = 0;
+            for (let i = 0; i < 9; i++) {
+                soma += parseInt(cpfNumerico.charAt(i)) * (10 - i);
+            }
+
+            let resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            if (resto !== parseInt(cpfNumerico.charAt(9))) return false;
+
+            soma = 0;
+            for (let i = 0; i < 10; i++) {
+                soma += parseInt(cpfNumerico.charAt(i)) * (11 - i);
+            }
+
+            resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            if (resto !== parseInt(cpfNumerico.charAt(10))) return false;
+
+            return true;
+        }
+
         document.getElementById('formContato').addEventListener('submit', function(e) {
             alert('TEXTO DIFERENTE');
             const cpf = document.getElementById('cpf').value.trim();
@@ -114,6 +144,9 @@
             if (!telRegex.test(telefone)) {
                 alert('Telefone inválido. Use o formato (44) 99892-3204.');
                 e.preventDefault();
+            }
+            if (!cpfValidator(cpf)) {
+                alert('CPF VALIDO');
             }
         });
     </script>
