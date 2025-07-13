@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Contato</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
     <style>
         .container {
             max-width: 600px;
             margin-top: 50px;
             background-color: #ffd7d5;
         }
+
         .footer {
             background-color: #ffd7d5;
         }
     </style>
 </head>
+
 <body>
-      
+
     <?php include 'components/header.php'; ?>
 
     <div class="container">
         <h2 class="text-center">Formulário de Contato</h2>
-        <form action="#" method="POST">
+        <form id="formContato" action="" method="POST" novalidate>
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome Completo</label>
                 <input type="text" class="form-control" id="nome" name="nome" required placeholder="Digite seu nome completo">
@@ -91,7 +94,30 @@
     <?php include 'components/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById('formContato').addEventListener('submit', function(e) {
+            alert('TEXTO DIFERENTE');
+            const cpf = document.getElementById('cpf').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+            const telRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+            alert(cpf);
+
+            if (!cpfRegex.test(cpf)) {
+                alert('CPF inválido. Use o formato 000.000.000-00.');
+                e.preventDefault();
+            }
+
+            if (!telRegex.test(telefone)) {
+                alert('Telefone inválido. Use o formato (44) 99892-3204.');
+                e.preventDefault();
+            }
+        });
+    </script>
+
 </body>
+
 </html>
