@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
-        <a class="navbar-brand d-flex align-items-center" href="index.php">
-            <img src="imagens/logotransparente.png" alt="Logo" class="logo-img">
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.php">
+            <img src="imagens/logotransparente.png" alt="Logo">
         </a>
 
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
