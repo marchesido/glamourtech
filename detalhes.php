@@ -1,5 +1,5 @@
 <?php
-require 'mock/produtos.php'; 
+require 'mock/produtos.php';
 
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
@@ -23,7 +23,7 @@ if (!$produto) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title><?php echo $produto['id'];?></title>
+  <title><?php echo $produto['id']; ?></title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -40,16 +40,20 @@ if (!$produto) {
   <div class="container py-5">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
-        <img src="<?php echo $produto['image'];?>" class="img-fluid rounded shadow" alt="Foto do salão">
+        <img src="<?php echo $produto['image']; ?>" class="img-fluid rounded shadow" alt="Foto do salão">
       </div>
       <div class="col-md-6">
-        <h2 class="mb-4"><?php echo $produto['title'];?></h2>
+        <h2 class="mb-4"><?php echo $produto['title']; ?></h2>
         <p class="fs-5">
-          <?php echo $produto['description'];?>
+          <?php echo $produto['description']; ?>
         </p>
         <p class="fs-5">
-          <?php echo $produto['price'];?>
+          <?php echo $produto['price']; ?>
         </p>
+        <a href="https://wa.me/44998923204" target="_blank" class="btn btn-success d-inline-flex align-items-center">
+          <i class="bi bi-whatsapp me-2 fs-5"></i> Compre com a gente
+        </a>
+
       </div>
     </div>
   </div>
@@ -61,4 +65,5 @@ if (!$produto) {
     crossorigin="anonymous"></script>
 
 </body>
+
 </html>
