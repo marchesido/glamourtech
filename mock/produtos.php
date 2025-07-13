@@ -23,23 +23,23 @@ $cards = [
   ],
   [
     'id'=> 4,
-    'title' => 'Creme para rosto K-densifique',
-    'description' => 'Hidratação intensa e revitalização da pele do rosto com ativos naturais.',
-    'price' => 'R$69,90',
-    'image' => 'imagens/produtos/shampoos/3.1.jpg'
+    'title' => 'Perfume - Hugo Boss',
+    'description' => ' Seus perfumes são um complemento da casa de moda, que é dividida em três etiquetas: Boss, Hugo e Boss Orange.',
+    'price' => 'R$269,90',
+    'image' => 'imagens/produtos/perfume/1.3.jpg'
   ],
   [
     'id'=> 5,
-    'title' => 'Shampoo Loreal Inforcer',
-    'description' => 'Fortalece os fios frágeis e quebradiços com fórmula rica em biotina.',
-    'price' => 'R$45,90',
-    'image' => 'imagens/produtos/shampoos/2.1.jpg'
+    'title' => 'Perfume Club De Nuit-Intense Man',
+    'description' => 'Club de Nuit Intense é uma fragrância amadeirada picante para homens.',
+    'price' => 'R$245,90',
+    'image' => 'imagens/produtos/perfume/3.2.jpg'
   ],
   [
     'id'=> 6,
-    'title' => 'Shampoo anticaspa',
-    'description' => 'Combate a caspa desde a primeira aplicação e deixa o couro cabeludo limpo.',
+    'title' => 'Creme hidratante Garnier - Vitamina C',
+    'description' => 'Hidratante Facial Antimanchas Toque Seco',
     'price' => 'R$29,90',
-    'image' => 'imagens/produtos/secador/1.1.jpg'
+    'image' => 'imagens/produtos/skincare/1.1.jpg'
   ],
 ];
