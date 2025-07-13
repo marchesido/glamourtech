@@ -3,21 +3,21 @@ $cards = [
   [
     'id'=> 1,
     'title' => 'Secador taiff rosa 1000w',
-    'description' => 'Secador compacto com alta potência e design moderno na cor rosa.',
+    'description' => 'O Sistema dual transmission mantém a temperatura da chapa constante através da reposição instantânea de calor e a tecnologia PTC garante que a temperatura não oscile.',
     'price' => 'R$189,90',
     'image' => 'imagens/produtos/chapinhas/1.1.jpg'
   ],
   [
     'id'=> 2,
     'title' => 'Secador taiff azul 1500w',
-    'description' => 'Ideal para uso profissional, com motor silencioso e maior vazão de ar.',
+    'description' => 'Possui íons negativos que deixam os cabelos mais macios e sedosos, e o perfil de cerâmica protege os fios e facilita o deslizamento.',
     'price' => 'R$359,90',
     'image' => 'imagens/produtos/chapinhas/2.1.jpg'
   ],
   [
     'id'=> 3,
     'title' => 'Secador taiff preto 1200w',
-    'description' => 'Design ergonômico, tecnologia cerâmica e secagem rápida.',
+    'description' => 'Superleve, ergonômica e com 200ºC, esta chapa é ideal.',
     'price' => 'R$299,99',
     'image' => 'imagens/produtos/chapinhas/3.1.jpg'
   ],
