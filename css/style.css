@@ -24,16 +24,18 @@
   align-items: center;
 }
 
-.footer {
+.custom-footer {
   background-color: #ffd7d5;
-  color: #FFF;
-  padding: 5px;
-  box-sizing: border-box;
 }
-.footer img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.custom-footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.custom-footer a:hover {
+  color: #ff453c;
+}
+.custom-footer p {
+  margin-bottom: 0.25rem;
 }
 
 .card {

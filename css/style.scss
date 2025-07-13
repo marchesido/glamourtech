@@ -26,17 +26,23 @@ $primary: #ffd7d5;
     }
 }
 
-.footer {
-    background-color: $primary;
-    color: #FFF;
-    padding: 5px;
-    box-sizing: border-box;
-    img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.custom-footer {
+  background-color: #ffd7d5;
+
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken(#ffd7d5, 30%);
+    }
+  }
+
+  p {
+    margin-bottom: 0.25rem;
+  }
 }
-}
+
 
 .card {
     margin-bottom: 5px;
